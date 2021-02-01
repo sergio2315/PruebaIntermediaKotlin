@@ -22,6 +22,7 @@ class ConAdapter: RecyclerView.Adapter<ConAdapter.ConsumptionVH>() {
             binding.textView1.text = consumptions.item
             binding.textView2.text = consumptions.price.toString()
             binding.textView3.text = consumptions.quantity.toString()
+            binding.textView4.text = consumptions.total.toString()
             itemView.setOnClickListener(this)
         }
         override fun onClick(v: View?) {
